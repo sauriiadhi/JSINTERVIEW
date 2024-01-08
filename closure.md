@@ -46,22 +46,18 @@ console.log(counter.getValue()); // Outputs: 1
 console.log(count); // Error: count is not defined
 ```
 
-## 2. Function Factories
+## 2. Callbacks:
 
-Closures enable the creation of function factories, where you can generate specialized functions based on certain parameters.
+Closures are useful for creating callbacks, allowing functions to remember and access variables from their lexical scope.
 
 ```javascript
-function greet(prefix) {
-  return function(name) {
-    console.log(`${prefix}, ${name}!`);
-  };
+function performOperation(x, callback) {
+  return callback(x);
 }
 
-const sayHello = greet("Hello");
-const sayHi = greet("Hi");
+const square = performOperation(5, (num) => num * num);
+console.log(square); // Output: 25
 
-sayHello("Alice"); // Outputs: Hello, Alice!
-sayHi("Bob"); // Outputs: Hi, Bob!
 ```
 
 ## 3. Event Handlers
@@ -107,3 +103,22 @@ console.log(memoizedAdd(3, 4)); // Outputs: Performing expensive calculation... 
 console.log(memoizedAdd(3, 4)); // Outputs: 7 (result fetched from cache)
 
 ```
+
+## 5. Function Factories
+
+Closures enable the creation of function factories, where you can generate specialized functions based on certain parameters.
+
+```javascript
+function greet(prefix) {
+  return function(name) {
+    console.log(`${prefix}, ${name}!`);
+  };
+}
+
+const sayHello = greet("Hello");
+const sayHi = greet("Hi");
+
+sayHello("Alice"); // Outputs: Hello, Alice!
+sayHi("Bob"); // Outputs: Hi, Bob!
+```
+
