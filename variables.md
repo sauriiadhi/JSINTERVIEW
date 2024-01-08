@@ -77,8 +77,6 @@ In JavaScript, `let` is used to declare variables that can be reassigned. Here a
 ### Key diffrence btw `let` & `var`:
 - **Scoping:**
 - **Hoisting:**
-- **Hoisting:**
-- **Hoisting:**
 
 
 
