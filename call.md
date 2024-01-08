@@ -8,7 +8,3 @@ The `Function.call` method is used to invoke a function with a specified `this` 
 
 ```javascript
 function.call(thisArg, arg1, arg2, ...)
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODA0Njk0NzhdfQ==
--->
