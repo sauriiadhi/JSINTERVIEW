@@ -80,7 +80,9 @@ ReactJS is a declarative, efficient, and flexible JavaScript library for buildin
 16.  [useEffect](https://www.w3schools.com/react/react_useeffect.asp): Learn how to implement Mount, Update and Unmount Callbacks using useEffect
 17.  [useRef](https://www.w3schools.com/react/react_useref.asp)
 18.  useMemo & useCallback
-19. Controlled and uncontrolled components
+19.  Controlled and uncontrolled components
+20.  useDeferredValue
+
 
 **_React Advanced Concepts_**
 
