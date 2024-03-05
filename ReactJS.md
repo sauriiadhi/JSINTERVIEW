@@ -120,5 +120,5 @@ If things are becoming overwhelming for you, I would recommend at least having a
 6.  [Understanding the Difference between CSR and SSR Rendering](https://ritikchourasiya.medium.com/understanding-the-difference-between-csr-and-ssr-rendering-d2fa0eee50e/)
 
 That’s all about the ReactJS RoadMap For Developers. It’s very comprehensive for sure, but there is a good chance that many of you may already know most of the stuff. Remember to Start small and follow along. :)
-
-Soon I’ll write an article on CRUD operations in React using redux for your better understanding. Till then Bye. :D
+some imp blogs
+https://medium.com/simform-engineering/how-to-implement-ssr-server-side-rendering-in-react-18-e49bc43e9531
