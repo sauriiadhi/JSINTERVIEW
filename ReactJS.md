@@ -117,6 +117,7 @@ If things are becoming overwhelming for you, I would recommend at least having a
 3.  [Babel & Webpack](https://www.syncfusion.com/blogs/post/why-and-how-to-use-webpack-and-babel-with-vanilla-js.aspx)
 4.  [Https vs Http](https://www.geeksforgeeks.org/difference-between-http-and-https/)
 5.  What is Gulp and Grunt? (Just Overview)
+6.  [Understanding the Difference between CSR and SSR Rendering](https://ritikchourasiya.medium.com/understanding-the-difference-between-csr-and-ssr-rendering-d2fa0eee50e/)
 
 That’s all about the ReactJS RoadMap For Developers. It’s very comprehensive for sure, but there is a good chance that many of you may already know most of the stuff. Remember to Start small and follow along. :)
 
