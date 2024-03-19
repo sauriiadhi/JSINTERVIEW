@@ -26,7 +26,7 @@ JS is the only thing which brings logic and programming to the life of a front-e
 8.  [Spread Operator](https://www.geeksforgeeks.org/es6-spread-operator/)  and  [Rest Parameter](https://www.geeksforgeeks.org/javascript-rest-operator/): You’ll need these operators a lot sometimes so get familiar with them.
 9.  [Shallow and Deep Copy](https://medium.com/@manjuladube/understanding-deep-and-shallow-copy-in-javascript-13438bad941c): Get the basic understanding only.
 10.  [Lexical Scope](https://www.educative.io/answers/lexical-scope-in-javascript): Often people don’t know that it is called lexical scoping, but you know it. :)
-11.  [Difference b/w ES5 & ES6](https://www.javatpoint.com/es5-vs-es6#:~:text=Difference%20between%20ES5%20and%20ES6&text=ES6%20is%20the%20sixth%20edition,specification%20defined%20by%20ECMA%20International).&text=It%20was%20introduced%20in%202009,It%20was%20introduced%20in%202015.&text=ES5%20supports%20primitive%20data%20types,boolean%2C%20null%2C%20and%20undefined.)
+11.  [Difference b/w ES5 & ES6](https://www.javatpoint.com/es5-vs-es6#:~:text=Difference%20between%20ES5%20and%20ES6&text=ES6%20is%20the%20sixth%20edition,specification%20defined%20by%20ECMA%20International&text=It%20was%20introduced%20in%202009,It%20was%20introduced%20in%202015.&text=ES5%20supports%20primitive%20data%20types,boolean%2C%20null%2C%20and%20undefined.)
 
 **_Advanced JavaScript Concepts:_**
 
