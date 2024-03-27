@@ -109,6 +109,7 @@ If things are becoming overwhelming for you, I would recommend at least having a
 19.  [Redux](https://www.freecodecamp.org/news/what-is-redux-store-actions-reducers-explained/)  &  [mapStateToProps](https://dev.to/terrythreatt/what-is-mapstatetoprops-in-redux-427)
 20.  Add  [Redux Thunk](https://www.codementor.io/@rajjeet/add-thunk-to-your-react-redux-project-for-async-actions-using-these-4-lines-of-code-11w6kntp46)  to your React Application
 21.  [Redux persist](https://edisondevadoss.medium.com/how-to-use-redux-persist-in-react-application-35943c1d8292)  (whitelist & blacklist)
+22.  [useReducer](https://react.dev/reference/react/useReducer)
 
 # **General Concepts:**
 
