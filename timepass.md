@@ -250,5 +250,28 @@ function isAna(a,b){
 }
 
 console.log(isAna(a,b))
+function twoSum(arr,target){
+  var obj = {};
+  for (let i=0;i < arr.length; i++){
+    let num = arr[i];
+    if(obj[target - num] >= 0){
+      return[obj[target - num],i]
+    }else{
+      obj[num] = i
+    }
+  }
+  return -1
+}
 
+function rotateArrayOptimised(arr,k){
+  let size = arr.length;
+  if (size > k) {
+    k = k % size
+  }
+  let newArr = arr.splice(size - k,k)
+  arr.unshift(...newArr)
+  return arr
+}
+
+console.log(rotateArrayOptimised([-1, -100, 3, 99], 2));
 ```
