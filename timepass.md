@@ -177,5 +177,78 @@ const personObj2 = changeAgeAndReference(personObj1);
 
 console.log(personObj1); // -> ?
 console.log(personObj2); // -> ?
+const arr = [0, 1, 2,2,,3,3,0];
+let index = 0;
+
+const intervalid = setInterval(()=>{
+  if(arr.length > index){
+    console.log(arr[index])
+    index++
+  }else{
+    clearInterval(intervalid)
+  }
+},200)
+
+
+let largest = arr[0];
+let secondLargest = arr[1];
+
+for(let i=2;i<arr.length;i++){
+  if(arr[i] > largest){
+    secondLargest = largest
+    largest = arr[i];
+  }else if(arr[i] > secondLargest && arr[i] !== largest){
+    secondLargest = arr[i]
+  }
+}
+
+console.log("Second largest element:", secondLargest);
+
+let car = 41214;
+
+
+function isPal(arr){
+  return (car == car.toString().split("").reverse().join("")) ? console.log("palin") : console.log("not palin")
+}
+
+isPal(car)
+
+function fiboS(n){
+  let arr = [0,1];
+  for(let i= 2; i<n;i++){
+    arr.push(arr[i - 1] + arr[i - 2])
+  }
+  return arr;
+}
+
+console.log(fiboS(6))
+
+
+const fib = (n) => {
+  if(n<=1) return n;
+  return fib(n-1) + fib(n-2)
+}
+
+console.log(fib(3))
+
+let a = "anagram";
+let b = "naagmr";
+
+function isAna(a,b){
+  if(a.length !== b.length) return false;
+  let obj1 = {};
+  let obj2 = {};
+  for (let i=0;i<a.length;i++){
+    obj1[a[i]] = (obj1[a[i]] || 0) + 1;
+    obj2[b[i]] = (obj2[b[i]] || 0) + 1;
+  }
+
+  for (let k in obj1){
+    if(obj1[k] !== obj2[k]) return false;
+  }
+  return true;
+}
+
+console.log(isAna(a,b))
 
 ```
