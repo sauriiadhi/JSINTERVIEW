@@ -1,5 +1,5 @@
-```javascriptlet 
-arr = [0, 1, 2, 3,9,8]
+```javascript
+let arr = [0, 1, 2, 3,9,8]
 
 function sumOf(arr) {
   let res = [];
@@ -123,5 +123,75 @@ function repeatingChar(char){
 }
 
 repeatingChar(str)
+function startPromises(promises, index = 0) {
+  // Check if all promises have been executed
+  if (index >= promises.length) {
+    console.log("All promises executed successfully.");
+    return;
+  }
+
+  promises[index]()
+    .then(() => {
+      // Move to the next promise
+      startPromises(promises, index + 1);
+    })
+    .catch((error) => {
+      console.error(`Promise ${index + 1} failed:`, error);
+      // Restart from the beginning if a promise fails
+      startPromises(promises);
+    });
+}
+
+Example usage
+const promises = [
+  () => new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Simulating a successful operation
+      console.log("Promise 1 executed successfully.");
+      resolve();
+    }, 1000);
+  }),
+  () => new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Simulating a failed operation
+      console.log("Promise 2 failed.");
+      reject("Error: Promise 2 failed.");
+    }, 1000);
+  }),
+  () => new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Simulating a successful operation
+      console.log("Promise 3 executed successfully.");
+      resolve();
+    }, 1000);
+  }),
+];
+
+// Start executing promises
+// startPromises(promises);
+
+
+let obj1 = { a: 1, b: 2, c: 3, e: 3, d: 5 };
+let obj2 = { a: 0, b: 4, c: 4, d: 5, e: 3 };
+
+function mergeObjectsWithBiggerValue(obj1, obj2) {
+  let mergedObj = {};
+
+  for (let key in obj1) {
+    mergedObj[key] = Math.max(obj1[key], obj2[key]);
+  }
+
+  for (let key in obj2) {
+    if (!(key in obj1)) {
+      mergedObj[key] = obj2[key];
+    }
+  }
+
+  return mergedObj;
+}
+
+console.log(mergeObjectsWithBiggerValue(obj1, obj2));
+
+
 
 ```
