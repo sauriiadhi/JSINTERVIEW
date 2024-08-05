@@ -6,9 +6,8 @@ A higher-order component (HOC) is an advanced technique in React for reusing com
 //Comp1.js
 const  Comp1  =  (props, ref)  =>  {
 	return  (<div ref={ref}>
-					Hey  I am comp2 width:  {props.width}  
-					&  {props.randno}
-				</div>);
+		Hey  I am comp2 width:  {props.width}  &  {props.randno}
+		</div>);
 	};
 export  default  WithDimension(forwardRef(Comp1));
 
@@ -23,11 +22,10 @@ const withDimension =  (Element)  =>  {
 			setWidth(compRef.current.offsetWidth)
 			setHeight(compRef.current.offsetHeight)}
 		},  [])
-		return  <Element 
-						ref={compRef} 
-						height={height} 
-						width={width}  
-						{...props} />
+		return  <Element ref={compRef} 
+				height={height} 
+				width={width}  
+				{...props} />
 	}
 	return  WithDimensions;
 };
