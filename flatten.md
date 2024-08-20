@@ -10,21 +10,23 @@ function flattenArray(arr) {
   }, []);
 }
 
-function flattenObject(obj, parent) {
-  const finalObj = {}
-  const generateFlatObjects = (obj, parent) => {
-    for (let key in obj) {
-      const currKey = parent + key;
-      const currValue = obj[key]
-      if (typeof currValue === 'object'){
-        generateFlatObjects(currValue, currKey+".")
-      }else{
-        finalObj[currKey] = currValue
+function flattenObject(obj) {
+  const result = {};
+  for (const key in obj) {
+    if (
+      typeof obj[key] === 'object' &&
+      obj[key] !== null &&
+      !Array.isArray(obj[key])
+    ) {
+      const nested = flattenObject(obj[key]);
+      for (const nestedKey in nested) {
+        result[key + '.' + nestedKey] = nested[nestedKey];
       }
+    } else {
+      result[key] = obj[key];
     }
   }
-  generateFlatObjects(obj, parent)
-  return finalObj
+  return result;
 }
 
 const obj = {
