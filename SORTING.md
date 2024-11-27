@@ -17,7 +17,7 @@ function BubbleSort(arr){
 }
 console.log(BubbleSort(arr))
 ```
-#InsertionSort
+# InsertionSort
 ```javascript
 function InsertionSort(arr){
   for(let i = 1;i<arr.length;i++){
