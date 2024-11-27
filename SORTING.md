@@ -33,3 +33,21 @@ function InsertionSort(arr){
 }
 console.log(InsertionSort(arr))
 ```
+# QuickSort
+```javascript
+function QuickSort(arr){
+  if (arr.length <= 1) return arr;
+  let pivlot = arr[arr.length - 1];
+  let left = [];
+  let right =[]
+  for(let i = 0;i<arr.length - 1;i++){
+    if(arr[i] < pivlot){
+      left.push(arr[i])
+    }else{
+      right.push(arr[i])
+    }
+  }
+  return [...QuickSort(left),pivlot,...QuickSort(right)]
+}
+console.log(QuickSort(arr))
+```
